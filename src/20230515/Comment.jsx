@@ -38,7 +38,10 @@ const styles = {
     },
 };
 
-function Comment(props) {
+function Comment({name, comment, date, children}) { //비구조화 문법; 방법2
+
+    //const { name, comment, date } = props; //비구조화 문법; 방법1
+
     return (
         <div style={styles.wrapper}>
             <div style={styles.imageContainer}>
@@ -49,10 +52,17 @@ function Comment(props) {
             </div>
 
             <div style={styles.contentContainer}>
+                <span style={styles.nameText}>{name}</span>
+                <span style={styles.commentText}>{comment}</span>
+                <span style={styles.dateText}>{date}</span>     {/*비구조화 문법; 앞에 props를 생략함.*/}
+                {children}
+              </div>
+
+            {/*<div style={styles.contentContainer}>
                 <span style={styles.nameText}>{props.name}</span>
                 <span style={styles.commentText}>{props.comment}</span>
                 <span style={styles.dateText}>{props.date}</span>
-            </div>
+              </div>*/}
         </div>
     );
 }

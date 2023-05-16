@@ -9,7 +9,11 @@ import Babo from "./20230515/Babo";
 import Clock from "./20230515/Clock";
 import CommentList from "./20230515/CommentList";
 import RpsGame from "./20230515/rps";
+import NotificationList from "./20230516/NotificationList";
 import {Routes, Route, Link} from "react-router-dom";
+import Hooks1 from "./20230516/Hooks1";
+import Hooks2 from "./20230516/Hooks2";
+import Hooks3 from "./20230516/Hooks3";
 
 function App() {
   return (
@@ -23,6 +27,10 @@ function App() {
             <Nav.Link href="/Clock">Clock</Nav.Link>
             <Nav.Link href="/Comment">CommentList</Nav.Link>
             <Nav.Link href="/rps">가위바위보</Nav.Link>
+            <Nav.Link href="/notify">Notification</Nav.Link>
+            <Nav.Link href="/Hooks1">Hooks1</Nav.Link>
+            <Nav.Link href="/Hooks2">Hooks2</Nav.Link>
+            <Nav.Link href="/Hooks3">Hooks3</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
@@ -33,6 +41,10 @@ function App() {
         <Route path="/Clock" element={<Clock />}></Route>
         <Route path="/Comment" element={<CommentList />}></Route>
         <Route path="/rps" element={<RpsGame />}></Route>
+        <Route path="/notify" element={<NotificationList />}></Route>
+        <Route path="/Hooks1" element={<Hooks1 />}></Route>
+        <Route path="/Hooks2" element={<Hooks2 />}></Route>
+        <Route path="/Hooks3" element={<Hooks3 />}></Route>
       </Routes>
     </div>
   );
