@@ -1,5 +1,6 @@
 import nyancat from "./study.gif"
 import Accordion from 'react-bootstrap/Accordion';
+import Badge from 'react-bootstrap/Badge';
 import "bootstrap/dist/css/bootstrap.min.css"; //bootstrap 가져오기 
 
 function Study() {
@@ -79,6 +80,7 @@ function Study() {
             </Accordion>
             <button type="button" className="btn btn-info">민초맛 버튼</button> {/*class 대신 className */}
             <button type="button" className="btn btn-info">치약맛 버튼</button>
+            <Badge bg="primary">Primary</Badge>{' '}
             </div> //html 영역
          
     )

@@ -8,6 +8,7 @@ import Parent from "./20230515/Parent";
 import Babo from "./20230515/Babo";
 import Clock from "./20230515/Clock";
 import CommentList from "./20230515/CommentList";
+import RpsGame from "./20230515/rps";
 import {Routes, Route, Link} from "react-router-dom";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             <Nav.Link href="/babo">babo</Nav.Link>
             <Nav.Link href="/Clock">Clock</Nav.Link>
             <Nav.Link href="/Comment">CommentList</Nav.Link>
+            <Nav.Link href="/rps">가위바위보</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
@@ -30,6 +32,7 @@ function App() {
         <Route path="/babo" element={<Babo />}></Route>
         <Route path="/Clock" element={<Clock />}></Route>
         <Route path="/Comment" element={<CommentList />}></Route>
+        <Route path="/rps" element={<RpsGame />}></Route>
       </Routes>
     </div>
   );
