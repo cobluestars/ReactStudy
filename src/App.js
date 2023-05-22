@@ -14,6 +14,13 @@ import {Routes, Route, Link} from "react-router-dom";
 import Hooks1 from "./20230516/Hooks1";
 import Hooks2 from "./20230516/Hooks2";
 import Hooks3 from "./20230516/Hooks3";
+import UseEffect from "./20230522/UseEffect";
+import UseRef from "./20230522/UseRef";
+import UseMemoChild from "./20230522/UseMemoChild";
+import UseMemo from "./20230522/UseMemo";
+import UseCallback from "./20230522/UseCallback";
+import UseContext from "./20230522/UseContext";
+import Networking from "./20230522/Networking";
 
 function App() {
   return (
@@ -31,6 +38,13 @@ function App() {
             <Nav.Link href="/Hooks1">Hooks1</Nav.Link>
             <Nav.Link href="/Hooks2">Hooks2</Nav.Link>
             <Nav.Link href="/Hooks3">Hooks3</Nav.Link>
+            <Nav.Link href="/UseEffect">Hooks4</Nav.Link>
+            <Nav.Link href="/UseRef">Hooks5</Nav.Link>
+            <Nav.Link href="/UseMemo">Hooks6</Nav.Link>
+            <Nav.Link href="/UseCallback">Hooks7</Nav.Link>
+            <Nav.Link href="/UseContext">Hooks8</Nav.Link>
+            <Nav.Link href="/Networking">Networking</Nav.Link>
+
           </Nav>
         </Container>
       </Navbar>
@@ -45,6 +59,12 @@ function App() {
         <Route path="/Hooks1" element={<Hooks1 />}></Route>
         <Route path="/Hooks2" element={<Hooks2 />}></Route>
         <Route path="/Hooks3" element={<Hooks3 />}></Route>
+        <Route path="/UseEffect" element={<UseEffect />}></Route>
+        <Route path="/UseRef" element={<UseRef />}></Route>
+        <Route path="/UseMemo" element={<UseMemo />}></Route>
+        <Route path="/UseCallback" element={<UseCallback />}></Route>
+        <Route path="/UseContext" element={<UseContext />}></Route>
+        <Route path="/Networking" element={<Networking />}></Route>
       </Routes>
     </div>
   );
